@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(hello_world)
+project(isogram)
 
 # GoogleTest requires at least C++14
 set(CMAKE_CXX_STANDARD 17)
@@ -17,17 +17,17 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 # Add main.cpp file of project root directory as source file
-set(SOURCE_FILES hello_world.cpp)
+set(SOURCE_FILES isogram.cpp)
 
 add_executable(
-  hello_world_test
+  isogram_tests
   ${SOURCE_FILES}
-  hello_world_test.cpp
+  isogram_tests.cpp
 )
 target_link_libraries(
-  hello_world_test
+  isogram_tests
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(hello_world_test)
+gtest_discover_tests(isogram_tests)
