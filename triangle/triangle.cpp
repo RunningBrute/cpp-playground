@@ -3,12 +3,6 @@
 namespace triangle
 {
 
-bool compareFloatNumbers(double a, double b)
-{
-    if (abs(a - b) < 1e-9) return true;
-    else return false;
-}
-
 flavor kind(double side1, double side2, double side3)
 {
     std::array<double, 3> sides{side1, side2, side3};
@@ -26,10 +20,10 @@ flavor kind(double side1, double side2, double side3)
     double b = sides[1];
     double c = sides[0];
 
-    //if (!compareFloatNumbers(std::pow(c, 2), (std::pow(a, 2) + std::pow(b, 2))))
-    //{
-    //    throw std::domain_error("");
-    //}
+    if (c > a + b)
+    {
+        throw std::domain_error("violating triangle inequality");
+    }
 
     if ((side1 == side2) & (side2 == side3))
         return flavor::equilateral;
