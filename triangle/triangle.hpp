@@ -3,6 +3,8 @@
 #include <set>
 #include <algorithm>
 #include <stdexcept>
+#include <cmath>
+#include <bits/stdc++.h>
 
 namespace triangle
 {
