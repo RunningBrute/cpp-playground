@@ -1,0 +1,24 @@
+# Conan
+.conan/
+build/
+
+# Visual Studio Code
+.vscode/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+# Object and compiled files
+*.exe
+*.o
+*.obj
+*.pdb
+*.dll
+*.lib
+*.so
+*.a
+
+# Other files
+Testing/
