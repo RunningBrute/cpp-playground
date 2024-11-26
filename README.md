@@ -4,7 +4,7 @@
 
 `conan install . --output-folder=build --build=missing -s build_type=Debug -s compiler.cppstd=20`
 
-## Build project
+## Build project and run tests
 
 ```
 mkdir build
