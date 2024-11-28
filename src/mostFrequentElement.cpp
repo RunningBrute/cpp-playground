@@ -13,6 +13,9 @@
 // Example Input:  {1, 1, 2, 3};
 // Example Output: Most frequent element: 1
 
+namespace MostFrequentElement
+{
+
 using InputNumbers = std::vector<int>;
 using Occurrences = std::unordered_map<int, int>;
 
@@ -58,3 +61,5 @@ TEST_CASE("In case of a tie, most frequent element is a smaller one", "[MostFreq
 {
     REQUIRE(findMostFrequentElement({1, 1, 2, 3, 3}) == 1);
 }
+
+} // namespace MostFrequentElement
