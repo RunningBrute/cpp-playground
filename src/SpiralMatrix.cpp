@@ -43,16 +43,16 @@ OutputMatrix spiralOrder(const InputMatrix& matrix)
     result.reserve(numberOfelements);
     
     std::size_t left = 0;
-    std::size_t right = matrix[0].size();
+    std::size_t right = matrix[0].size() - 1;
     std::size_t top = 0;
-    std::size_t bottom = matrix.size();
+    std::size_t bottom = matrix.size() - 1;
     ViewingDirection currentVievingDirection = ViewingDirection::RIGHT;
 
     while (result.size() < numberOfelements)
     {
         if (currentVievingDirection == ViewingDirection::RIGHT)
         {
-            for (std::size_t i = left; i < right; i++)
+            for (std::size_t i = left; i < right + 1; i++)
             {
                 result.push_back(matrix[top][i]);
             }
@@ -62,7 +62,7 @@ OutputMatrix spiralOrder(const InputMatrix& matrix)
         }
         else if (currentVievingDirection == ViewingDirection::DOWN)
         {
-            for (std::size_t i = top; i < bottom; i++)
+            for (std::size_t i = top; i < bottom + 1; i++)
             {
                 result.push_back(matrix[i][right]);
             }
