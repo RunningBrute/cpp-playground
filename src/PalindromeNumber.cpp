@@ -45,4 +45,19 @@ TEST_CASE("Test that 11 is palindrome", "[PalindromeNumber]")
     REQUIRE(isPalindrome(11) == true);
 }
 
+TEST_CASE("Test example 1", "[PalindromeNumber]")
+{
+    REQUIRE(isPalindrome(121) == true);
+}
+
+TEST_CASE("Test example 2", "[PalindromeNumber]")
+{
+    REQUIRE(isPalindrome(-121) == false);
+}
+
+TEST_CASE("Test example 3", "[PalindromeNumber]")
+{
+    REQUIRE(isPalindrome(10) == false);
+}
+
 } // namespace PalindromeNumber
