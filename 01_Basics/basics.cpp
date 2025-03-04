@@ -3,15 +3,15 @@
 class Car
 {
 public:
-    std::string brand;
-    int year;
+  std::string brand;
+  int year;
 
-    void display() 
-    {
-      std::cout << "Car brand: " << brand
-                << ", Year: " << year
-                << std::endl;
-    }
+  void display() 
+  {
+    std::cout << "Car brand: " << brand
+              << ", Year: " << year
+              << std::endl;
+  }
 };
 
 int main()
