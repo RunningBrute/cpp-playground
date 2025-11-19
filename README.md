@@ -2,6 +2,14 @@
 
 ## How to run
 
+### Strong Type example
+
+```cpp
+cd .\strong_types
+cl /EHsc /std:c++20 strong_type_example.cpp // build example
+strong_type_example.exe // run it
+```
+
 ### TDD example
 
 ```cpp
