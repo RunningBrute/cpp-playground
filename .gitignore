@@ -2,3 +2,5 @@ build/
 Testing/
 CMakeUserPresets.json
 .vscode/
+*exe
+*obj
