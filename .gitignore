@@ -1,6 +1,24 @@
+# Conan
+.conan/
 build/
-Testing/
-CMakeUserPresets.json
+
+# Visual Studio Code
 .vscode/
-*exe
-*obj
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+# Object and compiled files
+*.exe
+*.o
+*.obj
+*.pdb
+*.dll
+*.lib
+*.so
+*.a
+
+# Other files
+Testing/
