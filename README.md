@@ -31,3 +31,12 @@ cmake --build .
 ctest
 ```
 
+### OpenCV
+
+```
+cd opencv
+cmake -S . -B build
+cmake --build build
+cd build/Debug
+./helloWorld
+```
