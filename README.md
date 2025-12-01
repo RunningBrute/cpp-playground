@@ -20,7 +20,6 @@ cmake --build build
 .\build\Debug\test_calculator_gtest.exe // for gtest unit tests
 ```
 ### LeetsCode solutions
-
 ```
 cd leetscode
 conan install . --output-folder=build --build=missing -s build_type=Debug -s compiler.cppstd=20`
@@ -32,11 +31,17 @@ ctest
 ```
 
 ### OpenCV
-
 ```
 cd opencv
 cmake -S . -B build
 cmake --build build
 cd build/Debug
 ./helloWorld
+```
+### Exercism
+```
+cd exercism
+cmake -S . -B build
+cmake --build build
+cd build && ctest
 ```
